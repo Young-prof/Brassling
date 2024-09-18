@@ -1,0 +1,98 @@
+/* General body styling */
+body{
+    background-color: #141624;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #1D3557; /* Deep Navy Blue */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navbar links styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+    display: inline-block;
+}
+nav ul li a {
+    color: #F1FAEE; /* Light Gray */
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 1em;
+}
+nav ul li a:hover {
+    background-color: #FF6F61; /* Sunset Orange */
+    color: #1D3557;
+    border-radius: 5px;
+}
+/* Dropdown menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #1D3557;
+    padding: 0;
+    /* margin-top: 10px; */
+    width: 100%;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    width: 100%;
+    margin: 0;
+}
+/* Branding/logo section */
+.brand {
+    color: #F1FAEE; /* Light Gray */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Align dropdown arrow with text */
+nav ul li a .arrow{
+    margin-left: 5px;
+}
+nav ul li a .arrow {
+    margin-left: 5px;
+}
+/* Optional: Add styling for the dropdown arrow hover effect */
+nav ul li:hover a .arrow{
+    transform: rotate(180deg); /* Rotate arrow on hover */
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+/* Responsive layout *//* Responsive layout *//* Responsive layout *//* Responsive layout */
+
+@media (max-width: 954px) {
+    nav ul {
+        max-width: 100%;
+        padding: 0 25px;
+
+    }
+    nav ul li a {
+        padding: 5px;
+        font-size: 13px;
+    }
+   
+
+
+}
